@@ -1,0 +1,29 @@
+ name: Set up Workos Development Environment
+ hosts: localhost
+ become: no
+
+   vars:
+    workos_api_key: "{{ your_workos_api_key }}"
+    workos_api_secret: "{{ your_workos_api_secret }}"
+    application_name: "Your Application Name"
+    application_redirect_uri: "http://localhost:3000/auth/callback"
+    application_scopes:
+      - "openid"
+      - "email"
+      - "profile"
+
+  tasks:
+    - name: Install required tools (e.g., Python, pip)
+      # ...
+
+    - name: Create a virtual environment
+      # ...
+
+    - name: Install Workos SDK
+      # ...
+
+    - name: Configure application settings
+      # ...
+
+    - name: Start development server
+      # ...
